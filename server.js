@@ -1,4 +1,5 @@
 const express = require("express");
+const testAPI = require("./testAPI");
 
 const app = express();
 const PORT = 4000;
