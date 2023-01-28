@@ -1,11 +1,16 @@
 const express = require("express");
-const testAPI = require("./testAPI");
 
 const app = express();
-const PORT = 4000;
+const PORT = 5000;
 
 app.get("/", (req, res) => {
   res.sendFile(__dirname + '/index.html')
+});
+
+
+app.get('/test',(req, res)=>{
+
+	res.send("hello Node JS!");	
 });
 
 app.listen(PORT, () => {
